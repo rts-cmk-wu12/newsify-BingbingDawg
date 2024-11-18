@@ -8,7 +8,7 @@ module.exports = {
         home: '/src/javascript/home.js',
         login: '/src/javascript/login.js',
         popular: '/src/javascript/popular.js',
-        settings: '/src/javascript/settings.js'
+        settings: '/src/javascript/settings.js',
 
     },
     mode: "production",
@@ -54,5 +54,6 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
+        
     },
 };

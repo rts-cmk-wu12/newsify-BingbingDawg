@@ -1,16 +1,6 @@
 @use './scss/layout';
 @use './scss/components/menu';
 
-.slider{
-    &slider__image{
-        margin-top: 14px;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
 .dots{
     display: flex;
     justify-content: center;
@@ -25,11 +15,33 @@
     /*transition: all 250ms ease;*/
     animation: 3s infinite alternate;
     margin: 5px;
+}
+
+  .dots label:hover {
+    background: #fff;
   }
-  .dots label:hover {background: #fff;}
 
 .fill{
   background-color: yellow;
 }
 
 /*------SLIDER------*/
+
+.picture-slider{
+  &__image{
+      margin-top: 14px;
+  };
+  
+  &__flex{
+    display: flex;
+  };
+
+  &__scroller{
+  overflow: hidden;
+  };
+
+  &__information-one{
+   text-align: center;
+  };
+
+}
