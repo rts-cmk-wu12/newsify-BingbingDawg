@@ -1,6 +1,6 @@
 # Projektdokumentation
 
-**Navn:** 
+**Navn:** Andreas Aaberg Nielsen
 
 **Hold:** WUxx
 
@@ -18,7 +18,8 @@
 -   JavaScript
 -   Webpack
 -	Jest
--   ...
+-   Sass
+-	post-scss
 
 ---
 
@@ -29,6 +30,8 @@
 (Hvilke node-pakker har du installeret for at dit projekt virker? Beskriv kort hvilket "problem" hver pakke løser.)
 
 ---
+
+- html-webpack-plugin
 
 ### Argumentation for de valg du selvstændigt har truffet under løsningen af opgaven
 

@@ -1,0 +1,35 @@
+@use './scss/layout';
+@use './scss/components/menu';
+
+.slider{
+    &slider__image{
+        margin-top: 14px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    /*transition: all 250ms ease;*/
+    animation: 3s infinite alternate;
+    margin: 5px;
+  }
+  .dots label:hover {background: #fff;}
+
+.fill{
+  background-color: yellow;
+}
+
+/*------SLIDER------*/
