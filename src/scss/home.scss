@@ -1,19 +1,7 @@
 @use '../scss/layout';
 @use '../scss/components/footer';
+@use '../scss/components/header';
 
-.home-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-    margin-bottom: 30px;
-}
-.home-logo h1{
-   margin-left: 10px;
-   font-weight: 900;
-   font-size: 24px;
-   color: #404040;
-}
 .searchbar{
     text-align: center;
     &__input{
