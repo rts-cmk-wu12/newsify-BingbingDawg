@@ -1,1 +1,93 @@
 @use '../scss/layout';
+@use '../scss/components/footer';
+
+.home-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.home-logo h1{
+   margin-left: 10px;
+   font-weight: 900;
+   font-size: 24px;
+   color: #404040;
+}
+.searchbar{
+    text-align: center;
+    &__input{
+        height: 46px;
+        width: 345px;
+        background-color: #D9D9D9;
+        border: none;
+        font-family: 'Open Sans';
+        color: #222222;
+        opacity: 40%;
+        margin-bottom: 20px;
+    }
+}
+
+.newsarticle-category{
+    display: flex;
+    align-items: center;
+}
+
+//collapsing section
+.collapsible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 18px;
+    height: 60px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: #C5C5C5 solid;
+    
+  }
+.collapsible h2{
+    margin-left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #404040;
+    font-weight: 900;
+}
+  
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .content img {
+   display: inline-block;
+  }
+
+  .collapsible:after {
+    content: url(/public/img/feather_chevron-right.svg)
+  }
+  .active:after {
+  content: url(/public/img/feather_chevron-down.svg);
+}
+
+//nav
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+.footer-navigation a{
+    text-decoration: none;
+}
+
+.footer-navigation img{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}

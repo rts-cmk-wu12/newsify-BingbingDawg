@@ -21,29 +21,29 @@ margin-bottom: 60px;
  text-align: center;
 
   &__login{
-  width: 345px;
-  height: 65px;
-  border-radius: 40px;
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  margin-top: 20px;
-  border: 1px solid #C5C5C5;
-  background-color: white;
+    width: 345px;
+    height: 65px;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1px solid #C5C5C5;
+    background-color: white;
   }
 
-    &__sign-up{
-      width: 345px;
-      height: 65px;
-      border-radius: 40px;
-      font-family: 'Open Sans';
-      font-weight: 600;
-      font-size: 16px;
-      background-color: #4D861F;
-      color: white;
-      border: none;
-      margin-top: 40px;
-    }
+  &__sign-up{
+    width: 345px;
+    height: 65px;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #4D861F;
+    color: white;
+    border: none;
+    margin-top: 40px;
+  }
 }
 
 .sign-up{
