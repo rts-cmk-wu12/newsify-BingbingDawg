@@ -1,53 +1,25 @@
 require ('./style.scss');
 
-const container = document.querySelector('.picture-slider')
-const imageWindow = document.querySelector('.picture-slider__scroller')
-const next = document.querySelector('.next')
-const dots = document.querySelector('.dots');
+const sliderElement = document.querySelector('.picture-slider')
+const continueButton = document.querySelector('.continue')
+const radioElements = document.querySelectorAll('.scrollbar__radio')
+const radioElementArray = Array.from(radioElements)
 
-const infoOne = document.querySelector('picture-slider__information-one')
-const infoTwo = document.querySelector('picture-slider__information-two')
-const infothree = document.querySelector('picture-slider__information-three')
+const sliderWidth = Math.ceil(sliderElement.getBoundingClientRect().width)
 
-function slideDots(){
-Array.from(dots.children).forEach((dot, index) =>{
-    if(currentIndex === index){
-        dot.classList.add('fill')
-    }else{
-        dot.classList.remove('fill')
+radioElements.forEach((element, index) => element.addEventListener ('change', () => {
+    sliderElement.scrollTo(sliderWidth * index, 0)
+
+}));
+
+continueButton.addEventListener('click', () => {
+    const checkedRadio = radioElementArray.find(radio => radio.checked);
+    const nextRadioButton = checkedRadio.parentElement.nextElementSibling;
+
+    if (nextRadioButton === null){
+        window.location = './login.html'
+    } else {
+        nextRadioButton.click();
     }
 
 })
-}
-
-
-
-Array.from(container.children).forEach((element, index) => {
-    dots.innerHTML += `<div class = "dot ${ index == 0 ? 'fill' : '' }" data-index="${index}"></div>`;
-})
-
-
-let currentIndex = 0;
-const imageWindowWidth = container.offsetWidth;
-console.log(imageWindowWidth)
-
-        
-container.addEventListener('click', (event) => {
-    let newIndex = currentIndex;
-    
-   if(event.target === next){
-        if(newIndex < container.children.length - 1){
-            newIndex = currentIndex + 1;
-        }
-    }
-
-    currentIndex = newIndex;
-    const offset = newIndex * imageWindowWidth;
-
-
-    container.animate([{ transform: `translateX(-${offset}px)` }], { duration: 300, fill: 'both'})
-
-    slideDots();
-});
-
-slideDots();
