@@ -3,16 +3,36 @@
 @use '../scss/components/header';
 @use '../scss/home.scss';
 
+.darkmode{
+  text-align: center;
+
+  &__button{
+    width: 345px;
+    height: 65px;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 2px solid #4D861F;
+    background-color: white;
+    color: #4D861F;
+  }
+}
+
 .setting-header{
     text-align: center;
     font-family: 'Open Sans';
+
     &__second-title{
         font-family: inherit;
         font-size: 32px;
         color: #4D861F;
+        margin-bottom: 12px;
     }
     &__third-title{
         font-family: inherit;
+        margin-bottom: 25px;
     }
 }
 /* The switch - the box around the slider */
@@ -84,17 +104,20 @@
     width: 100%;
     border: none;
     text-align: left;
-    border-top: #C5C5C5 solid;
+    border-top: 0.5px #C5C5C5 solid;
 
     &__heading{
         display: flex;
         align-items: center;
     }
     &__text{
+        margin-left: 10px;
         font-family: 'Playfair Display';
+        text-transform: uppercase;
+        font-weight: 900;
     }
   }
   .settings-onoff:nth-child(6){
-    border-bottom: #C5C5C5 solid;
+    border-bottom: 0.5px #C5C5C5 solid;
   }
   
