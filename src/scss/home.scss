@@ -44,7 +44,8 @@
     width: 100%;
     border: none;
     text-align: left;
-    outline: #C5C5C5 solid;
+    border-top: #C5C5C5 solid;
+    border-bottom: #C5C5C5 solid;
     
   }
 .collapsible h2{
@@ -57,37 +58,15 @@
   
   
   .content {
-    padding: 0 18px;
+    padding: 8px 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
   }
-  .content img {
-   display: inline-block;
-  }
-
+  
   .collapsible:after {
     content: url(/public/img/feather_chevron-right.svg)
   }
   .active:after {
   content: url(/public/img/feather_chevron-down.svg);
-}
-
-//nav
-
-.footer-navigation{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    
-}
-
-.footer-navigation a{
-    text-decoration: none;
-}
-
-.footer-navigation img{
-    display: block;
-    justify-content: center;
-    text-align: center;
 }

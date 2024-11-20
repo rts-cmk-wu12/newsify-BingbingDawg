@@ -1,0 +1,21 @@
+.footer-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 -5px 7px -5px #333;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-navigation a{
+    text-decoration: none;
+}
+
+.footer-navigation img{
+    display: block;
+    margin-inline: auto;
+    margin-top: 10px;
+}
