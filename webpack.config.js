@@ -1,5 +1,6 @@
 const htmlWebpackPlugin = require ('html-webpack-plugin')
-const path = require("path")
+const path = require("path");
+const { Script } = require('vm');
 
 module.exports = {
     entry: {
@@ -15,32 +16,38 @@ module.exports = {
     plugins: [new htmlWebpackPlugin({
         template: path.resolve(__dirname, "src/html", "archive.html"),
             filename: 'archive.html',
-            chunks: ['archive.js']
+            chunks: ['archive'],
+            scriptLoading: 'module'
     }),
     new htmlWebpackPlugin ({
         template: path.resolve(__dirname, "src/html", "home.html"),
              filename: 'home.html',
-             chunks: ['home.js']
+             chunks: ['home'],
+             scriptLoading: 'module'
     }),
     new htmlWebpackPlugin ({
         template: path.resolve(__dirname, "src/html", "index.html"),
             filename: 'index.html',
-            chunks: ['main.js']
+            chunks: ['main'],
+            scriptLoading: 'module'
     }),
     new htmlWebpackPlugin ({
         template: path.resolve(__dirname, "src/html", "login.html"),
             filename: 'login.html',
-            chunks: ['login.js']
+            chunks: ['login'],
+            scriptLoading: 'module'
     }),
     new htmlWebpackPlugin ({
         template: path.resolve(__dirname, "src/html", "popular.html"),
             filename: 'popular.html',
-            chunks: ['popular.js']
+            chunks: ['popular'],
+            scriptLoading: 'module'
     }),
     new htmlWebpackPlugin ({
         template: path.resolve(__dirname, "src/html", "settings.html"),
             filename: 'settings.html',
-            chunks: ['settings.js']
+            chunks: ['settings'],
+              scriptLoading: 'module'
     })],
 
     module: {
@@ -53,6 +60,19 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.(?:js|mjs|cjs)$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    targets: "defaults",
+                    presets: [
+                      ['@babel/preset-env']
+                    ],
+                  },
+                },
+              },
         ],
         
     },

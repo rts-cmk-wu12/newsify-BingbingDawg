@@ -6,13 +6,15 @@
     text-align: center;
     &__input{
         height: 46px;
-        width: 345px;
+        width: 300px;
         background-color: #D9D9D9;
         border: none;
+        border-radius: 5px;
         font-family: 'Open Sans';
         color: #222222;
         opacity: 40%;
         margin-bottom: 20px;
+        padding-inline: 5px;
     }
 }
 
@@ -49,12 +51,14 @@
     padding: 8px 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: white;
   }
   
   .collapsible:after {
-    content: url(/public/img/feather_chevron-right.svg)
+    content: url(/public/img/feather_chevron-right.svg);
+    transition: transform 0.3s ease;
   }
   .active:after {
-  content: url(/public/img/feather_chevron-down.svg);
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
 }

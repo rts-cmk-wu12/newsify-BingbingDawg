@@ -20,6 +20,7 @@
 -	Jest
 -   Sass
 -	post-scss
+-	babel
 
 ---
 
@@ -42,7 +43,7 @@
 
 (Hvad gik godt. Hvor prioriterede du forkert. Klagesange fra de varme lande om halvfærdigt produkt, på grund af manglende nattesøvn, fordi din kæle-skildpadde havde tandpine er IKKE interessante.)
 
----
+--- 
 ### En beskrivelse af særlige punkter til bedømmelse
 
 (er der en særlig detalje som du synes din underviser bør lægge mærke til når dit projekt evalueres)

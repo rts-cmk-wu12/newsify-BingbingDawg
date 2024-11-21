@@ -1,4 +1,5 @@
 require ('./style.scss');
+require ('./javascript/popular')
 
 const sliderElement = document.querySelector('.picture-slider')
 const continueButton = document.querySelector('.continue')
