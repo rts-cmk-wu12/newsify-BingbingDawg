@@ -2,7 +2,7 @@
 
 **Navn:** Andreas Aaberg Nielsen
 
-**Hold:** WUxx
+**Hold:** WU12
 
 **Uddannelse:** Webudvikler
 
@@ -21,6 +21,7 @@
 -   Sass
 -	post-scss
 -	babel
+-	copyplugin
 
 ---
 
@@ -42,6 +43,7 @@
 
 (Hvilke overvejelser har du gjort dig, fx. i forbindelse med dit valg af animationer)
 
+jeg har at bytte rundt på farverne af til og fra knapperne. Da jeg synes det kan skabe forvirring om den er tændt eller den er slukket når den er grøn.
 ---
 ### Vurdering af egen indsats & gennemførelse af opgaveforløbet (Arbejdsgangen)
 

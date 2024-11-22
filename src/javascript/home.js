@@ -1,5 +1,5 @@
 require ('../scss/home.scss')
-require ('../javascript/popular')
+
 
 const collapseNewsArray = ["Health", "Sport", "Travel", "Business", "Europe"];
 function collapseMenu(titleData){
@@ -36,14 +36,5 @@ function collapseMenu(titleData){
 collapseNewsArray.forEach(category => collapseMenu(category));
 
 
-// fetch 
-const { fetchMostPopularByViews } = require ('./nyt');
 
-(async () => {
-  try { const popularNews = await fetchMostPopularByViews();
-    console.log(popularNews);
-} catch (error) {
-    console.error('Error', error);
-  }
-})();
 
