@@ -1,8 +1,8 @@
 # Projektdokumentation
 
-**Navn:** 
+**Navn:** Andreas Aaberg Nielsen
 
-**Hold:** WUxx
+**Hold:** WU12
 
 **Uddannelse:** Webudvikler
 
@@ -18,7 +18,10 @@
 -   JavaScript
 -   Webpack
 -	Jest
--   ...
+-   Sass
+-	post-scss
+-	babel
+-	copyplugin
 
 ---
 
@@ -28,18 +31,25 @@
 
 (Hvilke node-pakker har du installeret for at dit projekt virker? Beskriv kort hvilket "problem" hver pakke løser.)
 
+- jeg har brugt W3schools til at lave on and off buttons ved settings page https://www.w3schools.com/howto/howto_css_switch.asp
+
+- jeg har brugt w3schools til at lave colapse menu https://www.w3schools.com/howto/howto_js_collapsible.asp
+
 ---
+
+- html-webpack-plugin
 
 ### Argumentation for de valg du selvstændigt har truffet under løsningen af opgaven
 
 (Hvilke overvejelser har du gjort dig, fx. i forbindelse med dit valg af animationer)
 
+jeg har at bytte rundt på farverne af til og fra knapperne. Da jeg synes det kan skabe forvirring om den er tændt eller den er slukket når den er grøn.
 ---
 ### Vurdering af egen indsats & gennemførelse af opgaveforløbet (Arbejdsgangen)
 
 (Hvad gik godt. Hvor prioriterede du forkert. Klagesange fra de varme lande om halvfærdigt produkt, på grund af manglende nattesøvn, fordi din kæle-skildpadde havde tandpine er IKKE interessante.)
 
----
+--- 
 ### En beskrivelse af særlige punkter til bedømmelse
 
 (er der en særlig detalje som du synes din underviser bør lægge mærke til når dit projekt evalueres)
