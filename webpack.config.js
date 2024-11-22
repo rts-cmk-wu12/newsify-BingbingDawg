@@ -1,6 +1,5 @@
 const htmlWebpackPlugin = require ('html-webpack-plugin')
 const path = require("path");
-const { Script } = require('vm');
 
 module.exports = {
     entry: {
@@ -61,19 +60,22 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(?:js|mjs|cjs)$/,
+                test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
                   loader: 'babel-loader',
                   options: {
-                    targets: "defaults",
                     presets: [
                       ['@babel/preset-env']
                     ],
+                    plugins: ["@babel/plugin-syntax-top-level-await"]
                   },
                 },
               },
         ],
         
     },
+    resolve: {
+        extensions: ['.js', '.mjs']
+    }
 };

@@ -30,6 +30,10 @@
 
 (Hvilke node-pakker har du installeret for at dit projekt virker? Beskriv kort hvilket "problem" hver pakke løser.)
 
+- jeg har brugt W3schools til at lave on and off buttons ved settings page https://www.w3schools.com/howto/howto_css_switch.asp
+
+- jeg har brugt w3schools til at lave colapse menu https://www.w3schools.com/howto/howto_js_collapsible.asp
+
 ---
 
 - html-webpack-plugin
