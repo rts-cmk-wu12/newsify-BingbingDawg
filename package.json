@@ -8,7 +8,8 @@
     "build": "webpack --mode=production",
     "build:watch": "webpack --watch",
     "dev": "webpack --mode=development",
-    "dev:serve": "webpack serve --mode=development"
+    "dev:serve": "webpack serve --mode=development",
+    "production": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
