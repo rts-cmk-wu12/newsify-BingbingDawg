@@ -1,8 +1,8 @@
 # Projektdokumentation
 
-**Navn:** 
+**Navn:** Andreas Aaberg Nielsen
 
-**Hold:** WUxx
+**Hold:** WU12
 
 **Uddannelse:** Webudvikler
 
@@ -18,7 +18,10 @@
 -   JavaScript
 -   Webpack
 -	Jest
--   ...
+-   Sass
+-	post-scss
+-	babel
+-	copyplugin
 
 ---
 
@@ -26,20 +29,27 @@
 
 ### Redegørelse for oprindelsen af evt. tredjeparts kode anvendt i opgaveløsningen (Teknisk dokumentation)
 
-(Hvilke node-pakker har du installeret for at dit projekt virker? Beskriv kort hvilket "problem" hver pakke løser.)
+- jeg har brugt W3schools til at lave on and off buttons ved settings page https://www.w3schools.com/howto/howto_css_switch.asp
+
+- jeg har brugt w3schools til at lave collapse menu https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+- noget af koden i popular har jeg fået lidt hjælp af co-pilot https://copilot.microsoft.com/chats/By6GrNTFmhaZFaakLBkxR
 
 ---
 
+- html-webpack-plugin
+
 ### Argumentation for de valg du selvstændigt har truffet under løsningen af opgaven
 
-(Hvilke overvejelser har du gjort dig, fx. i forbindelse med dit valg af animationer)
+- jeg har at byttet rundt på farverne af til og fra knapperne. Da jeg synes det kan skabe forvirring om den er tændt eller den er slukket når den er grøn.
 
 ---
 ### Vurdering af egen indsats & gennemførelse af opgaveforløbet (Arbejdsgangen)
 
-(Hvad gik godt. Hvor prioriterede du forkert. Klagesange fra de varme lande om halvfærdigt produkt, på grund af manglende nattesøvn, fordi din kæle-skildpadde havde tandpine er IKKE interessante.)
+- Jeg synes at indsats var det gik meget godt med scss, men lige snart jeg skulle til javasriptet gik det helt galt jeg kunne slet ikke komme i gang og brugt meget af den resterne tid
+  på at prøve at få javascripten til at virke fik ikke rigtigt gennemført så meget da jeg sad fast i javascript
 
----
+--- 
 ### En beskrivelse af særlige punkter til bedømmelse
 
 (er der en særlig detalje som du synes din underviser bør lægge mærke til når dit projekt evalueres)
